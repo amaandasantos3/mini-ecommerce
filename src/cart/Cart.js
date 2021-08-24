@@ -330,7 +330,7 @@ const styles = StyleSheet.create({
     fontSize: 16
   },
   addressContainer: {
-    backgroundColor: Colors.grayBlack,
+    backgroundColor: Colors.grayLight,
     marginTop: 10,
     padding: 20,
     justifyContent: 'center',
@@ -346,7 +346,7 @@ const styles = StyleSheet.create({
   },
   addressValue: {
     fontSize: 16,
-    color: Colors.gray,
+    color: Colors.pink,
     fontWeight: 'bold'
   },
   resume: {

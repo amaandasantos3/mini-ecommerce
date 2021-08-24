@@ -50,7 +50,7 @@ const CartItem = ({remove, item, refresh}) => {
 <View style={{flexDirection: 'row', marginBottom: 10}}>
     <View style={{ flex: 1, flexDirection: 'row' }}>
               <Image
-                source={zelda}
+                source={item.image}
                 style={styles.productImg}
               />
 

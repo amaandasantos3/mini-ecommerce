@@ -4,6 +4,7 @@ import { Card } from 'react-native-paper';
 import { NumberFormat } from '../components';
 import plus from '../utils/img/plus-cart.png'
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Colors from "../utils/styles/Colors";
 
 const CardList = ({ navigation, item }) => {
 

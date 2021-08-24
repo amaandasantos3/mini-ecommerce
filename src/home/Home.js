@@ -28,7 +28,7 @@ export default props => {
   return (
   
     <SafeAreaView style={styles.container}>
-      <View>
+      <View style={{flex: 1}}>
 
         <View style={styles.bloq}>
           <Image source={logo} style={styles.image} />

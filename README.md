@@ -4,8 +4,23 @@ O aplicativo consiste em uma loja de games, tendo uma lista de todos os jogos di
 
 ![Tela inicial do app](resources/home.png) ![alt text](resources/cartVazio.png) ![alt text](resources/cart.png) ![alt text](resources/finalizar.png)
 
-Para instalação em android: npm install or yarn install
+# Instalação
 
-Para instalação em iOS: yarn install && cd ios && pod install
+## Android
+
+```bash
+npm install
+npm run android
+```
+
+## iOS
+
+```bash
+yarn install
+cd ios
+pod install
+cd ..
+yarn ios
+```
 
 

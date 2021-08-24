@@ -1,15 +1,12 @@
 import React from "react"
 import { View, Text, StyleSheet, SafeAreaView, Image, TouchableOpacity, FlatList, ScrollView } from "react-native"
-import { Avatar, Button, Card, Title, Paragraph } from 'react-native-paper';
 import { useFocusEffect } from '@react-navigation/native';
 import logo from '../utils/img/logo.png'
 import cart from '../utils/img/cart.png'
-import zelda from '../utils/img/zelda.png'
-import Icon from 'react-native-vector-icons/MaterialIcons';
 import {CardList, Count} from '../components'
 import jogos from '../utils/mock/jogos'
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
+import Colors from "../utils/styles/Colors";
 export default props => {
   const [count, setCount] = React.useState(0);
 
@@ -29,8 +26,10 @@ export default props => {
   );
 
   return (
+  
     <SafeAreaView style={styles.container}>
       <View>
+
         <View style={styles.bloq}>
           <Image source={logo} style={styles.image} />
           <TouchableOpacity onPress={() => props.navigation.navigate('Cart')}>
@@ -43,22 +42,25 @@ export default props => {
           <Text style={styles.text}>Games</Text>
           <Text style={styles.textBold}>Populares</Text>
         </View>
-
+     
         <FlatList
           numColumns={2}
           keyExtractor={(jogo) => jogo.id}
           data={jogos}
           renderItem={({item}) => <CardList item={item} navigation={props.navigation} />}
         />
-      </View>
+    
+   
+    </View>
     </SafeAreaView>
+  
   )
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff'
+    backgroundColor: Colors.white
   },
   image: {
     resizeMode: 'stretch',
@@ -94,13 +96,13 @@ const styles = StyleSheet.create({
 
   },
   actions: {
-    backgroundColor: '#623FD9',
+    backgroundColor: Colors.purple,
     borderRadius: 4,
     marginTop: 8
   },
 
   button: {
-    color: '#fff',
+    color: Colors.white,
     borderRadius: 20,
     textAlign: 'center'
   },

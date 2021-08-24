@@ -1,14 +1,12 @@
 import React, { useState } from 'react';
 
 import { View, Text, Image, StyleSheet } from 'react-native';
-import { Avatar, Button, Card, Title, Paragraph, TextInput } from 'react-native-paper';
-import logo from '../utils/img/logo.png'
-import cart from '../utils/img/cart.png'
+import { Button } from 'react-native-paper';
 import zelda from '../utils/img/zelda.png' 
 
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-
+import Colors from '../utils/styles/Colors';
 import { NumberFormat } from './';
 
 const CartItem = ({remove, item, refresh}) => {
@@ -86,7 +84,7 @@ export default CartItem;
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: '#fff'
+      backgroundColor: Colors.white
     },
   
     input: {
@@ -126,16 +124,16 @@ const styles = StyleSheet.create({
       marginTop: 10
     },
     actions: {
-      backgroundColor: '#623FD9',
+      backgroundColor: Colors.purple,
       borderRadius: 4,
       marginTop: 8
     },
     card: {
       width: '45%',
-      backgroundColor: '#F6F6F6'
+      backgroundColor: Colors.grayBlack
     },
     button: {
-      color: '#fff',
+      color: Colors.white,
       borderRadius: 20,
       textAlign: 'center'
     },
@@ -155,9 +153,7 @@ const styles = StyleSheet.create({
       height: 85,
       borderRadius: 5
     },
-    productDetails: {
-      backgroundColor: 'red'
-    },
+   
     title: {
       flex: 1,
       fontWeight: "500",

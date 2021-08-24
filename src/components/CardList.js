@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
         height: 20,
         flexDirection: 'row',
         justifyContent: 'space-around',
-        backgroundColor: '#DBDBDB',
+        backgroundColor: Colors.grayLight,
         borderRadius: 3,
         marginTop: 6
     },
@@ -78,11 +78,11 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 32
     },
-    title:{
-        fontSize: 14, 
-        lineHeight: 15, 
-        fontWeight: 'bold', 
-        textAlign: 'center' 
+    title: {
+        fontSize: 14,
+        lineHeight: 15,
+        fontWeight: 'bold',
+        textAlign: 'center'
     },
     category: {
         fontSize: 9,
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
         margin: 11,
     },
     actions: {
-        backgroundColor: '#623FD9',
+        backgroundColor: Colors.purple,
         borderRadius: 4,
         marginTop: 8,
         alignItems: 'center',
@@ -109,11 +109,11 @@ const styles = StyleSheet.create({
     },
     card: {
         flexGrow: 1,
-        backgroundColor: '#F6F6F6',
+        backgroundColor: Colors.grayLight,
         width: '100%'
     },
     button: {
-        color: '#fff',
+        color: Colors.white,
 
 
         textAlign: 'center'

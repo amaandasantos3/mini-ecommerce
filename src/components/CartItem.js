@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, SafeAreaView } from 'react-native';
 import { Button } from 'react-native-paper';
 import zelda from '../utils/img/zelda.png' 
 
@@ -47,6 +47,7 @@ const CartItem = ({remove, item, refresh}) => {
     }
     
   return (
+    <SafeAreaView>
 <View style={{flexDirection: 'row', marginBottom: 10}}>
     <View style={{ flex: 1, flexDirection: 'row' }}>
               <Image
@@ -76,6 +77,7 @@ const CartItem = ({remove, item, refresh}) => {
                 }
             </View>
 </View>
+</SafeAreaView>
   );
 };
 
